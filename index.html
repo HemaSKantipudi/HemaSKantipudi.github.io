@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Hema Sudheer Kantipudi | IT Systems Support</title>
+<meta name="description" content="Hema Sudheer Kantipudi: Senior Technical Officer, Systems Support. Microsoft 365, Intune, Entra ID, Azure, ITIL and networking specialist based in Queensland, Australia.">
+<meta property="og:title" content="Hema Sudheer Kantipudi | IT Systems Support">
+<meta property="og:description" content="End-user computing, Microsoft 365, identity and endpoint management, ITIL service delivery.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500&display=swap" rel="stylesheet">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b5cff'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='700' font-size='26' fill='white'%3EHS%3C/text%3E%3C/svg%3E">
+<style>
+:root{
+  --bg:#f6f8fc; --surface:#ffffff; --surface-2:#eef2fa; --text:#0f172a; --muted:#5b6478;
+  --line:#e2e7f0; --accent:#0b5cff; --accent-2:#00b3a4; --accent-soft:rgba(11,92,255,.08);
+  --shadow:0 1px 2px rgba(15,23,42,.04),0 8px 24px rgba(15,23,42,.06);
+  --tile:#ffffff; --hero-grad:radial-gradient(1200px 500px at 85% -10%,rgba(11,92,255,.14),transparent 60%),radial-gradient(800px 400px at -10% 10%,rgba(0,179,164,.12),transparent 60%);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#0a0f1c; --surface:#111827; --surface-2:#172033; --text:#e7ecf5; --muted:#9aa4b8;
+    --line:#233047; --accent:#5b8cff; --accent-2:#2dd4bf; --accent-soft:rgba(91,140,255,.12);
+    --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35); --tile:#f3f5f9;
+    --hero-grad:radial-gradient(1200px 500px at 85% -10%,rgba(91,140,255,.22),transparent 60%),radial-gradient(800px 400px at -10% 10%,rgba(45,212,191,.14),transparent 60%);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#0a0f1c; --surface:#111827; --surface-2:#172033; --text:#e7ecf5; --muted:#9aa4b8;
+  --line:#233047; --accent:#5b8cff; --accent-2:#2dd4bf; --accent-soft:rgba(91,140,255,.12);
+  --shadow:0 1px 2px rgba(0,0,0,.3),0 10px 30px rgba(0,0,0,.35); --tile:#f3f5f9;
+  --hero-grad:radial-gradient(1200px 500px at 85% -10%,rgba(91,140,255,.22),transparent 60%),radial-gradient(800px 400px at -10% 10%,rgba(45,212,191,.14),transparent 60%);
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth;scroll-padding-top:72px}
+body{font-family:Inter,system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--text);line-height:1.6;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1120px;margin:0 auto;padding:0 20px}
+@media(max-width:600px){.wrap{padding:0 16px}}
+
+/* nav */
+nav{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 82%,transparent);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+nav .wrap{display:flex;align-items:center;justify-content:space-between;height:60px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:700}
+.brand .mark{width:32px;height:32px;border-radius:9px;background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;display:grid;place-items:center;font-size:13px;font-weight:800}
+.links{display:flex;gap:4px;align-items:center}
+.links a{padding:8px 12px;border-radius:8px;font-size:14px;color:var(--muted);font-weight:500}
+.links a:hover{color:var(--text);background:var(--surface-2)}
+.theme{border:1px solid var(--line);background:var(--surface);color:var(--text);width:36px;height:36px;border-radius:9px;cursor:pointer;display:grid;place-items:center;margin-left:6px}
+@media(max-width:820px){.links a{display:none}}
+
+/* hero */
+.hero{background:var(--hero-grad);padding:84px 0 64px;border-bottom:1px solid var(--line)}
+.hero-grid{display:grid;grid-template-columns:1.35fr .9fr;gap:48px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}.hero{padding:56px 0 48px}}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:6px 12px;border-radius:999px;background:var(--surface);border:1px solid var(--line);font-size:13px;color:var(--muted);font-weight:500}
+.dot{width:8px;height:8px;border-radius:50%;background:#16a34a;box-shadow:0 0 0 4px rgba(22,163,74,.18)}
+h1{font-size:clamp(34px,5.4vw,58px);line-height:1.05;letter-spacing:-.03em;margin:18px 0 14px;font-weight:800}
+h1 .grad{background:linear-gradient(90deg,var(--accent),var(--accent-2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.role{font-size:clamp(17px,2vw,20px);font-weight:600;margin-bottom:12px}
+.lead{color:var(--muted);font-size:17px;max-width:600px}
+.tags{display:flex;flex-wrap:wrap;gap:8px;margin:22px 0 28px}
+.tag{font-size:13px;padding:5px 11px;border-radius:8px;background:var(--accent-soft);color:var(--accent);font-weight:600}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.btn{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:10px;font-weight:600;font-size:15px;transition:transform .15s,box-shadow .15s}
+.btn:hover{transform:translateY(-1px)}
+.btn.primary{background:var(--accent);color:#fff;box-shadow:0 6px 18px rgba(11,92,255,.28)}
+.btn.ghost{background:var(--surface);border:1px solid var(--line)}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:16px;box-shadow:var(--shadow)}
+.hero-card{padding:24px}
+.hero-card h3{font-size:13px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin-bottom:14px}
+.stats{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-bottom:20px}
+.stat{background:var(--surface-2);border-radius:12px;padding:14px}
+.stat b{display:block;font-size:28px;letter-spacing:-.02em;line-height:1.1}
+.stat span{font-size:13px;color:var(--muted)}
+.mini-logos{display:flex;flex-wrap:wrap;gap:10px}
+
+/* logos */
+.logo{width:48px;height:48px;border-radius:12px;background:var(--tile);border:1px solid var(--line);display:grid;place-items:center;overflow:hidden;flex:none}
+.logo img{width:72%;height:72%;object-fit:contain}
+.logo.sm{width:40px;height:40px;border-radius:10px}
+.logo.lg{width:60px;height:60px;border-radius:14px}
+.mono{width:100%;height:100%;display:grid;place-items:center;color:#fff;font-weight:800;font-size:15px;letter-spacing:-.02em}
+.ms4{display:grid;grid-template-columns:1fr 1fr;gap:2px;width:52%;height:52%}
+.ms4 i{display:block}
+
+/* sections */
+section{padding:80px 0}
+@media(max-width:600px){section{padding:56px 0}}
+.eyebrow{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--accent);font-weight:500;margin-bottom:8px}
+h2{font-size:clamp(26px,3.4vw,36px);letter-spacing:-.02em;line-height:1.15;margin-bottom:12px}
+.sub{color:var(--muted);max-width:640px;margin-bottom:36px}
+
+/* about */
+.about-grid{display:grid;grid-template-columns:1.3fr 1fr;gap:24px}
+@media(max-width:900px){.about-grid{grid-template-columns:1fr}}
+.about-text{padding:28px;font-size:16px}
+.about-text p+p{margin-top:14px}
+.strengths{padding:28px}
+.strengths ul{list-style:none;display:grid;gap:12px}
+.strengths li{display:flex;gap:12px;font-size:15px}
+.strengths li svg{flex:none;margin-top:3px;color:var(--accent-2)}
+
+/* timeline */
+.timeline{position:relative;display:grid;gap:20px}
+.timeline:before{content:"";position:absolute;left:29px;top:10px;bottom:10px;width:2px;background:linear-gradient(var(--accent),var(--accent-2));opacity:.35}
+.job{display:grid;grid-template-columns:60px 1fr;gap:20px;position:relative}
+.job .body{padding:22px 24px}
+.job-head{display:flex;flex-wrap:wrap;justify-content:space-between;gap:6px 16px;margin-bottom:4px}
+.job h3{font-size:18px;letter-spacing:-.01em}
+.when{font-family:"JetBrains Mono",monospace;font-size:13px;color:var(--muted);white-space:nowrap}
+.org{color:var(--accent);font-weight:600;font-size:15px;margin-bottom:12px}
+.org small{color:var(--muted);font-weight:500}
+.job ul{padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:6px}
+.job ul li::marker{color:var(--accent)}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:14px}
+.chip{font-size:12px;padding:4px 9px;border-radius:6px;background:var(--surface-2);color:var(--text);font-weight:500;border:1px solid var(--line)}
+.job.break .body{background:transparent;border-style:dashed;box-shadow:none}
+.more{background:none;border:none;color:var(--accent);font-weight:600;cursor:pointer;font:inherit;font-size:14px;margin-top:10px;padding:0}
+.job ul.hide li:nth-child(n+6){display:none}
+@media(max-width:600px){.job{grid-template-columns:1fr}.timeline:before{display:none}.job .logo.lg{width:48px;height:48px}.job .body{padding:18px}}
+
+/* skills */
+.filters{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:24px}
+.filters button{font:inherit;font-size:14px;font-weight:600;padding:8px 14px;border-radius:999px;border:1px solid var(--line);background:var(--surface);color:var(--muted);cursor:pointer}
+.filters button.on{background:var(--accent);color:#fff;border-color:var(--accent)}
+.skill-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:12px}
+.skill{display:flex;flex-direction:column;align-items:center;text-align:center;gap:10px;padding:18px 12px;transition:transform .15s,border-color .15s}
+.skill:hover{transform:translateY(-2px);border-color:var(--accent)}
+.skill b{font-size:14px;line-height:1.3}
+.skill span{font-size:12px;color:var(--muted);line-height:1.35}
+.skill[hidden]{display:none}
+.concepts{margin-top:28px;padding:24px}
+.concepts h3{font-size:16px;margin-bottom:12px}
+.concept-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:18px}
+.concept-grid h4{font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:8px}
+
+/* certs */
+.cert-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(250px,1fr));gap:14px}
+.cert{display:flex;gap:14px;align-items:center;padding:16px 18px}
+.cert b{font-size:15px;display:block;line-height:1.3}
+.cert span{font-size:13px;color:var(--muted)}
+.code{font-family:"JetBrains Mono",monospace;font-size:11px;padding:2px 6px;border-radius:5px;background:var(--accent-soft);color:var(--accent);margin-left:4px;white-space:nowrap}
+
+/* edu */
+.edu-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media(max-width:800px){.edu-grid{grid-template-columns:1fr}}
+.edu{display:flex;gap:16px;padding:22px}
+.edu h3{font-size:17px;line-height:1.3}
+.edu p{color:var(--muted);font-size:14px}
+.project{margin-top:16px;padding:26px;display:grid;grid-template-columns:auto 1fr;gap:18px;align-items:start}
+.project .ico{width:48px;height:48px;border-radius:12px;background:linear-gradient(135deg,var(--accent),var(--accent-2));display:grid;place-items:center;color:#fff}
+.project p{color:var(--muted);font-size:15px}
+
+/* contact */
+.contact{text-align:center;padding:48px 24px;background:linear-gradient(135deg,var(--accent),#0846c4 60%,var(--accent-2));color:#fff;border:none}
+.contact h2{color:#fff}
+.contact p{opacity:.85;max-width:520px;margin:0 auto 26px}
+.contact .cta{justify-content:center}
+.contact .btn.primary{background:#fff;color:#0b3fb3;box-shadow:none}
+.contact .btn.ghost{background:rgba(255,255,255,.12);border-color:rgba(255,255,255,.35);color:#fff}
+footer{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center}
+
+.reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
+.reveal.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav>
+  <div class="wrap">
+    <a href="#top" class="brand"><span class="mark">HS</span><span>Hema Sudheer</span></a>
+    <div class="links">
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#skills">Skills</a><a href="#certifications">Certifications</a><a href="#education">Education</a><a href="#contact">Contact</a>
+      <button class="theme" id="themeBtn" aria-label="Toggle dark mode">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top">
+  <div class="wrap hero-grid">
+    <div>
+      <span class="pill"><span class="dot"></span>Australian Citizen · Open to relocation</span>
+      <h1>Hema Sudheer <span class="grad">Kantipudi</span></h1>
+      <p class="role">Senior Technical Officer, Systems Support</p>
+      <p class="lead">I keep hospitals, councils and enterprises running. My work covers end-user computing, Microsoft 365 and identity, endpoint management and ITIL service delivery, with a calm, people-first approach to support.</p>
+      <div class="tags">
+        <span class="tag">Microsoft 365</span><span class="tag">Intune &amp; Autopilot</span><span class="tag">Entra ID</span><span class="tag">Azure</span><span class="tag">ITIL 4</span><span class="tag">Networking</span>
+      </div>
+      <div class="cta">
+        <a class="btn primary" href="#contact">Get in touch</a>
+        <a class="btn ghost" href="#experience">View experience</a>
+      </div>
+    </div>
+    <aside class="card hero-card reveal">
+      <h3>At a glance</h3>
+      <div class="stats">
+        <div class="stat"><b>4+ yrs</b><span>Enterprise IT support</span></div>
+        <div class="stat"><b>8</b><span>Industry certifications</span></div>
+        <div class="stat"><b>L1–L3</b><span>Support &amp; administration</span></div>
+        <div class="stat"><b>M.Tech</b><span>Enterprise Systems</span></div>
+      </div>
+      <h3>Organisations</h3>
+      <div class="mini-logos" id="miniLogos"></div>
+    </aside>
+  </div>
+</header>
+
+<main>
+<section id="about">
+  <div class="wrap">
+    <p class="eyebrow">// about</p>
+    <h2>Technical depth, client-driven mindset</h2>
+    <div class="about-grid">
+      <div class="card about-text reveal">
+        <p>I'm an IT professional with experience across healthcare, utilities, local government and retail. Today I deliver End User Computing and ICT services for <strong>Queensland Health</strong> in Cairns, supporting clinical and business systems in a complex hospital environment where uptime directly affects patient care.</p>
+        <p>Before that, I was an End-user Systems &amp; Network Administrator at <strong>Unity Water</strong> (through Cognizant), handling Level 3 support, Entra ID SSO/SCIM integrations, Intune compliance and PKI. Earlier, as IT Officer at <strong>Barkly Regional Council</strong>, I travelled to remote communities to deploy infrastructure and train end users.</p>
+        <p>I hold a Master of Technology in Enterprise Systems and keep upskilling across Microsoft, Cisco and CompTIA. Right now I'm sharpening my PowerShell and Power Platform skills.</p>
+      </div>
+      <div class="card strengths reveal">
+        <h3 style="font-size:16px;margin-bottom:16px">Strengths</h3>
+        <ul id="strengths"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="experience" style="background:var(--surface-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow">// experience</p>
+    <h2>Where I've worked</h2>
+    <p class="sub">From frontline customer service to Level 3 enterprise administration.</p>
+    <div class="timeline" id="timeline"></div>
+  </div>
+</section>
+
+<section id="skills">
+  <div class="wrap">
+    <p class="eyebrow">// skills &amp; tools</p>
+    <h2>Technology toolkit</h2>
+    <p class="sub">Platforms and tools I use every day, grouped by area.</p>
+    <div class="filters" id="filters"></div>
+    <div class="skill-grid" id="skillGrid"></div>
+    <div class="card concepts reveal">
+      <div class="concept-grid">
+        <div><h4>ITIL Practices</h4><div class="chips" id="c-itil"></div></div>
+        <div><h4>Networking</h4><div class="chips" id="c-net"></div></div>
+        <div><h4>Identity &amp; Security</h4><div class="chips" id="c-sec"></div></div>
+        <div><h4>Business Applications</h4><div class="chips" id="c-apps"></div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="certifications" style="background:var(--surface-2);border-block:1px solid var(--line)">
+  <div class="wrap">
+    <p class="eyebrow">// certifications</p>
+    <h2>Certified &amp; current</h2>
+    <p class="sub">Eight certifications across Microsoft, Cisco, CompTIA and ITIL.</p>
+    <div class="cert-grid" id="certGrid"></div>
+  </div>
+</section>
+
+<section id="education">
+  <div class="wrap">
+    <p class="eyebrow">// education</p>
+    <h2>Education</h2>
+    <p class="sub">Tertiary and postgraduate qualifications in IT.</p>
+    <div class="edu-grid" id="eduGrid"></div>
+    <div class="card project reveal">
+      <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m19 9-5 5-4-4-3 3"/></svg></div>
+      <div>
+        <p class="eyebrow" style="margin-bottom:4px">Master's project</p>
+        <h3 style="font-size:18px;margin-bottom:8px">Classification of E-commerce Clothing Reviews</h3>
+        <p>I used statistical analysis and sentiment analysis to understand customer sentiment and guide marketing strategy. The project processed unstructured survey and review data into actionable insights, which drove product recommendations for customers.</p>
+        <div class="chips"><span class="chip">Sentiment Analysis</span><span class="chip">Statistics</span><span class="chip">Unstructured Data</span><span class="chip">Recommendations</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="card contact reveal">
+      <p class="eyebrow" style="color:rgba(255,255,255,.8)">// contact</p>
+      <h2>Let's work together</h2>
+      <p>Available for an immediate start and ready to relocate. I'm happy to talk about IT support, systems administration and EUC roles.</p>
+      <div class="cta">
+        <a class="btn primary" href="mailto:hemakantipudi528@gmail.com">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>Email me</a>
+        <a class="btn ghost" href="https://www.linkedin.com/in/hema-sudheer-kantipudi-225036aa/" target="_blank" rel="noopener">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></svg>LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer>© <span id="yr"></span> Hema Sudheer Kantipudi · Queensland, Australia</footer>
+
+<script>
+/* ---------- logo helpers ---------- */
+const MS = '<div class="ms4"><i style="background:#F25022"></i><i style="background:#7FBA00"></i><i style="background:#00A4EF"></i><i style="background:#FFB900"></i></div>';
+const mono = (txt, bg) => `<div class="mono" style="background:${bg}">${txt}</div>`;
+const icon = f => `<img src="assets/icons/${f}.svg" alt="">`;
+
+/* Company logo: tries assets/logos/<id>.png (drop official logos here),
+   then the site's favicon, then falls back to a monogram. */
+function companyLogo(c, size='lg'){
+  const el = document.createElement('div');
+  el.className = 'logo ' + size; el.title = c.name;
+  el.innerHTML = mono(c.mono, c.color);
+  const tries = [];
+  if (c.icon) tries.push(`assets/icons/${c.icon}.svg`);
+  tries.push(`assets/logos/${c.id}.png`, `assets/logos/${c.id}.svg`);
+  if (c.domain) tries.push(`https://www.google.com/s2/favicons?domain=${c.domain}&sz=128`);
+  (function next(i){
+    if (i >= tries.length) return;
+    const img = new Image();
+    img.alt = c.name;
+    img.onload = () => {
+      const remote = /^https?:/.test(tries[i]);
+      if (remote && img.naturalWidth < 48) return next(i+1); // skip tiny / default favicons
+      el.innerHTML = ''; el.appendChild(img);
+    };
+    img.onerror = () => next(i+1);
+    img.src = tries[i];
+  })(0);
+  return el;
+}
+
+/* ---------- data ---------- */
+const companies = {
+  qh:   {id:'qld-health', name:'Queensland Health', mono:'QH', color:'#7a1f3d', domain:'health.qld.gov.au'},
+  uw:   {id:'unity-water', name:'Unity Water', mono:'UW', color:'#0077c8', domain:'unitywater.com'},
+  cog:  {id:'cognizant', name:'Cognizant', mono:'C', color:'#1A4CA1', icon:'cognizant'},
+  brc:  {id:'barkly-regional-council', name:'Barkly Regional Council', mono:'BRC', color:'#b5541c', domain:'barkly.nt.gov.au'},
+  ce:   {id:'coles-express', name:'Coles Express', mono:'CE', color:'#e01a22', domain:'colesexpress.com.au'},
+  fed:  {id:'federation-university', name:'Federation University', mono:'FU', color:'#003a70', domain:'federation.edu.au'},
+  gitam:{id:'gitam', name:'GITAM', mono:'GI', color:'#00704a', domain:'gitam.edu'},
+  brk:  {id:'break', name:'Professional development', mono:'', color:'#64748b'}
+};
+
+const jobs = [
+  {c:'qh', title:'Senior Technical Officer, Systems Support', org:'Queensland Health', loc:'Cairns, QLD', when:'Jun 2026 – Present',
+   pts:['Deliver End User Computing (EUC) and ICT services across a complex hospital environment and corporate office.',
+        'Support Microsoft 365, Outlook, Active Directory, Entra ID, Intune and Azure environments.',
+        'Support Queensland Health clinical and business applications, including ieMR, iTT and D-tracker.',
+        'Deliver ITIL Incident, Problem, Change, Request and Asset Management, resolving complex issues within SLAs.',
+        'Provide LAN/WAN, wireless, VPN, firewall and connectivity support, plus disaster recovery and business continuity work.',
+        'Monitor enterprise systems such as Down Time Viewer with SolarWinds, Splunk and Olympus, and coordinate remediation.',
+        'Install and manage WOW carts, SATO and Zebra printers across Far North Queensland with DTS.',
+        'Support clinical technology, including patient monitors and hospital ICT equipment.',
+        'Contribute to ICT projects, upgrades, migrations, deployments and digital transformation.',
+        'Write and maintain technical documentation, work instructions and knowledge base articles.'],
+   tech:['Microsoft 365','Entra ID','Intune','Azure','ieMR','SolarWinds','Splunk','ITIL']},
+  {c:'brk', brk:true, title:'Career break: relocation & upskilling', org:'Professional development', loc:'India → Australia', when:'Aug 2025 – May 2026',
+   pts:['Took a planned break to manage family responsibilities and relocate internationally from India to Australia.',
+        'Kept learning in Microsoft 365, Azure, cyber security, IT service management, networking and digital workplace technologies.',
+        'Earned CompTIA Network+, Cisco Certified Support Technician and further Microsoft certifications.'],
+   tech:['Network+','CCST','Microsoft Certified']},
+  {c:'uw', c2:'cog', title:'End-user Systems & Network Administrator', org:'Unity Water', note:'via MSP Cognizant', loc:'Mango Hill, QLD', when:'Oct 2024 – Aug 2025',
+   pts:['Provided Level 3 support, advanced troubleshooting, incident resolution and root cause analysis.',
+        'Administered Active Directory and Entra ID, including Group Policy, identity lifecycle and secure access controls.',
+        'Configured Entra ID SSO/SCIM integrations for SaaS applications.',
+        'Administered Microsoft Intune MDM/MAM compliance across Windows, iOS, macOS and Android.',
+        'Managed Windows Server across cloud and hybrid infrastructure.',
+        'Handled patch management, vulnerability remediation and compliance monitoring.',
+        'Managed PKI and certificate services, including issuance, renewals and CA rollover.',
+        'Administered Exchange Online, Teams, SharePoint Online and OneDrive for Business.',
+        'Supported Azure and AWS resource provisioning, monitoring and cost optimisation.'],
+   tech:['Entra ID','SSO/SCIM','Intune','Windows Server','PKI','Exchange Online','Azure','AWS']},
+  {c:'brc', title:'Information Technology Officer', org:'Barkly Regional Council', loc:'Tennant Creek, NT', when:'Apr 2022 – Oct 2024',
+   pts:['Served as first point of contact for IT incidents and requests across multiple locations, maintaining SLA compliance.',
+        'Managed escalations with external managed service providers.',
+        'Deployed Yealink VoIP handsets, Microsoft Teams meeting devices and collaboration technology.',
+        'Administered Active Directory accounts, permissions and mobile device management platforms.',
+        'Reimaged and configured laptops, desktops and mobile devices to meet security standards.',
+        'Travelled to remote communities to deliver infrastructure support, deployments and end-user training.',
+        'Maintained IT asset registers and coordinated repairs, replacements and disposals.',
+        'Coordinated records management in line with legislative requirements.',
+        'Created technical documentation, knowledge base articles and staff onboarding resources.'],
+   tech:['Active Directory','Microsoft 365','Teams Rooms','Yealink VoIP','MDM','MagiQ Docs']},
+  {c:'ce', title:'Customer Service Representative', org:'Coles Express (BP)', loc:'Sydney, NSW', when:'May 2017 – Apr 2022',
+   pts:['Resolved customer enquiries promptly and professionally to ensure satisfaction.',
+        'Helped customers with purchase decisions, returns and exchanges.',
+        'Managed registers and inventory, and kept the store well presented.',
+        'Worked with the team and management to prioritise issues and improve efficiency.'],
+   tech:['Customer Service','Teamwork','Communication']}
+];
+
+const skills = [
+  {n:'Microsoft 365', d:'Admin, Security & Compliance', cat:'ms', l:MS},
+  {n:'Microsoft Intune', d:'MDM / MAM, compliance', cat:'ms', l:mono('In','#0078D4')},
+  {n:'Entra ID', d:'Azure AD, SSO, Conditional Access', cat:'ms', l:mono('En','#0072C6')},
+  {n:'Microsoft Azure', d:'Fundamentals & administration', cat:'cloud', l:icon('azure')},
+  {n:'Windows Autopilot', d:'Hardware hash, provisioning', cat:'ms', l:icon('windows')},
+  {n:'Defender & ATP', d:'Endpoint security', cat:'ms', l:mono('De','#0F6CBD')},
+  {n:'Exchange Online', d:'Mail flow & mailboxes', cat:'ms', l:mono('Ex','#0A64AD')},
+  {n:'Microsoft Teams', d:'Admin & meeting rooms', cat:'ms', l:mono('T','#5059C9')},
+  {n:'SharePoint & OneDrive', d:'Sites, permissions', cat:'ms', l:mono('S','#038387')},
+  {n:'Active Directory', d:'Group Policy, AD Connect', cat:'ms', l:icon('windows')},
+  {n:'Windows Server', d:'Hybrid & cloud environments', cat:'ms', l:icon('windows')},
+  {n:'PowerShell', d:'Scripting & automation', cat:'ms', l:icon('powershell')},
+  {n:'Power Automate & Apps', d:'Low-code workflows', cat:'ms', l:mono('Pa','#0066FF')},
+  {n:'AWS', d:'Provisioning, monitoring, cost', cat:'cloud', l:icon('aws')},
+  {n:'Citrix', d:'Virtual machines & apps', cat:'cloud', l:icon('citrix')},
+  {n:'Cisco Meraki', d:'MDM & MAM', cat:'net', l:icon('cisco')},
+  {n:'Networking', d:'TCP/IP, DNS, DHCP, VLANs, VPN', cat:'net', l:icon('cisco')},
+  {n:'SolarWinds', d:'Infrastructure monitoring', cat:'net', l:mono('SW','#F99D1C')},
+  {n:'Splunk', d:'Log analysis & alerting', cat:'net', l:icon('splunk')},
+  {n:'ServiceNow', d:'ITSM ticketing', cat:'itsm', l:mono('now','#293E40')},
+  {n:'Freshservice', d:'ITSM ticketing', cat:'itsm', l:mono('Fs','#25C16F')},
+  {n:'Zendesk', d:'Service desk', cat:'itsm', l:icon('zendesk')},
+  {n:'Apple Business Manager', d:'iOS & macOS enrolment', cat:'endpoint', l:icon('apple')},
+  {n:'macOS & iOS', d:'Install & maintenance', cat:'endpoint', l:icon('ios')},
+  {n:'Android', d:'Device management', cat:'endpoint', l:icon('android')},
+  {n:'Windows 10/11', d:'Imaging & support', cat:'endpoint', l:icon('windows')},
+  {n:'Zebra & SATO Printers', d:'Clinical label printing', cat:'endpoint', l:mono('Z','#000000')},
+  {n:'Yealink VoIP', d:'Handsets & Teams devices', cat:'endpoint', l:mono('Y','#00A1E4')}
+];
+const cats = [['all','All'],['ms','Microsoft'],['cloud','Cloud'],['net','Network & Monitoring'],['itsm','ITSM'],['endpoint','Endpoints & Devices']];
+
+const concepts = {
+  'c-itil':['Incident','Problem','Change','Request','Service','Asset Management'],
+  'c-net':['TCP/IP','DNS','DHCP','VPN','Routing','VLANs','LAN/WAN','Firewalls','Wireless'],
+  'c-sec':['SSO','MFA','Conditional Access','IAM','PIM','PAM','JIT Access','DLP','PKI','Patch Management'],
+  'c-apps':['ieMR','D-tracker','DTV','iTT','InfoCouncil','TechnologyOne','CouncilWise','MagiQ Docs','Doc Assembler','CMS']
+};
+
+const certs = [
+  {n:'Endpoint Administrator Associate', code:'MD-102', by:'Microsoft', l:MS},
+  {n:'Teams Administrator Associate', code:'MS-700', by:'Microsoft', l:MS},
+  {n:'Azure Fundamentals', code:'AZ-900', by:'Microsoft', l:icon('azure')},
+  {n:'Microsoft 365 Fundamentals', code:'MS-900', by:'Microsoft', l:MS},
+  {n:'Security, Compliance & Identity Fundamentals', code:'SC-900', by:'Microsoft', l:MS},
+  {n:'CompTIA Network+', code:'N10', by:'CompTIA', l:icon('comptia')},
+  {n:'Cisco Certified Support Technician: IT Support', code:'101-140', by:'Cisco', l:icon('cisco')},
+  {n:'ITIL 4 Foundation', code:'ITIL 4', by:'PeopleCert / AXELOS', l:mono('ITIL','#6d2077')}
+];
+
+const edu = [
+  {c:'fed', t:'Master of Technology (Enterprise Systems)', s:'Federation University · Sydney, Australia', y:'2018'},
+  {c:'gitam', t:'Bachelor of Technology (Computer Science & Engineering)', s:'Gandhi Institute of Technology & Management · Visakhapatnam, India', y:'2016'}
+];
+
+const strengths = [
+  'Building trusted relationships with internal and external stakeholders',
+  'Excellent customer service with a strong people focus',
+  'Working within government compliance frameworks',
+  'Identifying and mitigating technical and project risks',
+  'Experience working with First Nations and Indigenous communities',
+  'Patient, tactful technical training for end users',
+  'Clear technical documentation and reporting'
+];
+
+/* ---------- render ---------- */
+const $ = id => document.getElementById(id);
+const tick = '<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6 9 17l-5-5"/></svg>';
+$('strengths').innerHTML = strengths.map(s=>`<li>${tick}<span>${s}</span></li>`).join('');
+
+['qh','uw','cog','brc','ce'].forEach(k=>$('miniLogos').appendChild(companyLogo(companies[k],'sm')));
+
+jobs.forEach(j=>{
+  const el = document.createElement('article');
+  el.className = 'job reveal' + (j.brk?' break':'');
+  let logo;
+  if (j.brk){
+    logo = document.createElement('div'); logo.className='logo lg';
+    logo.innerHTML = '<svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="#0b5cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></svg>';
+  } else logo = companyLogo(companies[j.c]);
+  const body = document.createElement('div'); body.className='card body';
+  const long = j.pts.length > 5;
+  body.innerHTML = `<div class="job-head"><h3>${j.title}</h3><span class="when">${j.when}</span></div>
+    <div class="org">${j.org}${j.note?` <small>· ${j.note}</small>`:''} <small>· ${j.loc}</small></div>
+    <ul class="${long?'hide':''}">${j.pts.map(p=>`<li>${p}</li>`).join('')}</ul>
+    ${long?'<button class="more">Show more</button>':''}
+    <div class="chips">${j.tech.map(t=>`<span class="chip">${t}</span>`).join('')}</div>`;
+  if (j.c2){ const h=body.querySelector('.org'); const s=companyLogo(companies[j.c2],'sm'); s.style.cssText='width:22px;height:22px;border-radius:6px;display:inline-grid;vertical-align:middle;margin:0 2px'; h.insertBefore(s,h.querySelector('small')); }
+  const m = body.querySelector('.more');
+  if (m) m.onclick = () => { const u=body.querySelector('ul'); u.classList.toggle('hide'); m.textContent = u.classList.contains('hide')?'Show more':'Show less'; };
+  el.append(logo, body); $('timeline').appendChild(el);
+});
+
+$('filters').innerHTML = cats.map(([k,v],i)=>`<button data-k="${k}" class="${i?'':'on'}">${v}</button>`).join('');
+$('skillGrid').innerHTML = skills.map(s=>`<div class="card skill" data-cat="${s.cat}"><div class="logo">${s.l}</div><b>${s.n}</b><span>${s.d}</span></div>`).join('');
+$('filters').onclick = e => {
+  const b = e.target.closest('button'); if(!b) return;
+  $('filters').querySelectorAll('button').forEach(x=>x.classList.toggle('on',x===b));
+  document.querySelectorAll('.skill').forEach(s=>s.hidden = b.dataset.k!=='all' && s.dataset.cat!==b.dataset.k);
+};
+Object.entries(concepts).forEach(([id,arr])=>$(id).innerHTML = arr.map(t=>`<span class="chip">${t}</span>`).join(''));
+
+$('certGrid').innerHTML = certs.map(c=>`<div class="card cert reveal"><div class="logo">${c.l}</div><div><b>${c.n}</b><span>${c.by}<span class="code">${c.code}</span></span></div></div>`).join('');
+
+edu.forEach(e=>{
+  const el=document.createElement('div'); el.className='card edu reveal';
+  el.appendChild(companyLogo(companies[e.c]));
+  const d=document.createElement('div');
+  d.innerHTML=`<p class="when" style="margin-bottom:4px">${e.y}</p><h3>${e.t}</h3><p>${e.s}</p>`;
+  el.appendChild(d); $('eduGrid').appendChild(el);
+});
+
+$('yr').textContent = new Date().getFullYear();
+
+/* reveal on scroll */
+const io = 'IntersectionObserver' in window ? new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}}),{threshold:.08}) : null;
+document.querySelectorAll('.reveal').forEach(el=> io ? io.observe(el) : el.classList.add('in'));
+
+/* theme toggle */
+const root=document.documentElement;
+try{const t=localStorage.getItem('theme'); if(t) root.dataset.theme=t;}catch(e){}
+$('themeBtn').onclick=()=>{
+  const dark = root.dataset.theme ? root.dataset.theme==='dark' : matchMedia('(prefers-color-scheme: dark)').matches;
+  root.dataset.theme = dark?'light':'dark';
+  try{localStorage.setItem('theme',root.dataset.theme)}catch(e){}
+};
+</script>
+</body>
+</html>
