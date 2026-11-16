@@ -186,20 +186,15 @@ body,main{background:#fff}
 @media(max-width:900px){.impact-grid{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:520px){.impact-grid{grid-template-columns:1fr}.impact-item{min-height:auto}}
 
-/* Cairns live status panel */
-.status-panel{max-width:460px;margin:0 auto;text-align:left;position:relative;padding-top:88px}
-.status-portrait{width:174px;height:174px;object-fit:cover;border-radius:50%;border:5px solid #fff;box-shadow:0 10px 30px rgba(15,23,42,.14);position:absolute;top:0;left:50%;transform:translateX(-50%);z-index:2}
-.status-box{background:#fff;border:1px solid var(--line);border-radius:18px;padding:100px 24px 26px;box-shadow:var(--shadow)}
-.status-top{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:12px}
-.status-location{font-family:"JetBrains Mono",monospace;letter-spacing:.1em;font-size:11px;color:#24436a}
-.status-shift{font-family:"JetBrains Mono",monospace;font-size:11px;white-space:nowrap;color:#08795f;background:#e0f6ed;padding:8px 11px;border-radius:50px}
-.status-shift:before{content:"";display:inline-block;width:8px;height:8px;border-radius:50%;background:#12936d;margin-right:7px}
-.status-clock{font-family:"JetBrains Mono",monospace;font-size:clamp(27px,3.4vw,35px);font-weight:700;color:#14223c;font-variant-numeric:tabular-nums;letter-spacing:.02em;margin:6px 0 14px}
-.status-line{display:flex;justify-content:space-between;align-items:baseline;gap:15px;padding:14px 0;border-top:1px solid #dbe3ed;font-size:14px}
-.status-line span{color:#264267}
-.status-line strong{color:#0d1c35;font-family:"JetBrains Mono",monospace;text-align:right;font-size:14px}
-.status-line:last-child strong{font-size:12px}
-@media(max-width:520px){.status-box{padding-left:17px;padding-right:17px}.status-line{font-size:12px}.status-line strong{font-size:12px}}
+/* Extra details inside existing profile card */
+.career-details .status-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.career-details .status-location{font-size:11px;letter-spacing:.08em;color:var(--muted)}
+.career-details .status-shift{font-size:11px;color:#08795f;background:#e0f6ed;border-radius:30px;padding:5px 9px}
+.career-details .status-shift:before{content:"● ";color:#12936d}
+.career-details .status-clock{font-family:"JetBrains Mono",monospace;font-size:28px;font-weight:700;margin:12px 0;color:var(--text);font-variant-numeric:tabular-nums}
+.career-details .status-line{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:12px 0;font-size:13px}
+.career-details .status-line span{color:var(--muted)}
+.career-details .status-line strong{text-align:right;font-size:12px}
 </style>
 </head>
 <body>
@@ -231,9 +226,17 @@ body,main{background:#fff}
         <a class="btn ghost" href="#experience">View experience</a>
       </div>
     </div>
-    <aside class="status-panel reveal" aria-label="Cairns live clock and career status">
-      <img class="status-portrait" src="https://avatars.githubusercontent.com/u/238323676?v=4" alt="Hema Sudheer Kantipudi profile photograph">
-      <div class="status-box">
+    <aside class="card hero-card reveal"><div class="profile-photo-wrap"><img class="profile-photo" src="https://avatars.githubusercontent.com/u/238323676?v=4" alt="Hema Sudheer Kantipudi profile photograph" loading="eager"></div>
+      <h3>At a glance</h3>
+      <div class="stats">
+        <div class="stat"><b>4+ yrs</b><span>Enterprise IT support</span></div>
+        <div class="stat"><b>8</b><span>Industry certifications</span></div>
+        <div class="stat"><b>L1–L3</b><span>Support &amp; administration</span></div>
+        <div class="stat"><b>M.Tech</b><span>Enterprise Systems</span></div>
+      </div>
+      <h3>Organisations</h3>
+      <div class="mini-logos" id="miniLogos"></div>
+      <div class="career-details" style="text-align:left;margin-top:20px">
         <div class="status-top"><span class="status-location">CAIRNS · AEST</span><span class="status-shift">ON SHIFT</span></div>
         <div class="status-clock" id="cairnsClock" role="timer">--:--:--</div>
         <div class="status-line"><span>Time in IT</span><strong>4+ years</strong></div>
