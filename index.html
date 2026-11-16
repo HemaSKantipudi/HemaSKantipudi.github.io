@@ -401,7 +401,7 @@ const companies = {
 };
 
 const jobs = [
-  {c:'qh', title:'Senior Technical Officer, Systems Support', org:'Queensland Health', loc:'Cairns, QLD', when:'Jun 2026 – Present',
+  {c:'qh', title:'Senior Technical Officer, Systems Support', org:'Queensland Health', employment:'Contract · Full-time', loc:'Cairns, QLD', when:'Jun 2026 – Present',
    pts:['Deliver End User Computing (EUC) and ICT services across a complex hospital environment and corporate office.',
         'Support Microsoft 365, Outlook, Active Directory, Entra ID, Intune and Azure environments.',
         'Support Queensland Health clinical and business applications, including ieMR, iTT and D-tracker.',
@@ -418,7 +418,7 @@ const jobs = [
         'Kept learning in Microsoft 365, Azure, cyber security, IT service management, networking and digital workplace technologies.',
         'Earned CompTIA Network+, Cisco Certified Support Technician and further Microsoft certifications.'],
    tech:['Network+','CCST','Microsoft Certified']},
-  {c:'uw', c2:'cog', title:'End-user Systems & Network Administrator', org:'Unity Water', note:'via MSP Cognizant', loc:'Mango Hill, QLD', when:'Oct 2024 – Aug 2025',
+  {c:'uw', c2:'cog', title:'End-user Systems & Network Administrator', org:'Unity Water', note:'via MSP Cognizant', employment:'Permanent · Full-time', loc:'Mango Hill, QLD', when:'Oct 2024 – Aug 2025',
    pts:['Provided Level 3 support, advanced troubleshooting, incident resolution and root cause analysis.',
         'Administered Active Directory and Entra ID, including Group Policy, identity lifecycle and secure access controls.',
         'Configured Entra ID SSO/SCIM integrations for SaaS applications.',
@@ -429,7 +429,7 @@ const jobs = [
         'Administered Exchange Online, Teams, SharePoint Online and OneDrive for Business.',
         'Supported Azure and AWS resource provisioning, monitoring and cost optimisation.'],
    tech:['Entra ID','SSO/SCIM','Intune','Windows Server','PKI','Exchange Online','Azure','AWS']},
-  {c:'brc', title:'Information Technology Officer', org:'Barkly Regional Council', loc:'Tennant Creek, NT', when:'Apr 2022 – Oct 2024',
+  {c:'brc', title:'Information Technology Officer', org:'Barkly Regional Council', employment:'Permanent · Full-time', loc:'Tennant Creek, NT', when:'Apr 2022 – Oct 2024',
    pts:['Served as first point of contact for IT incidents and requests across multiple locations, maintaining SLA compliance.',
         'Managed escalations with external managed service providers.',
         'Deployed Yealink VoIP handsets, Microsoft Teams meeting devices and collaboration technology.',
@@ -531,7 +531,7 @@ jobs.forEach(j=>{
   const body = document.createElement('div'); body.className='card body';
   const long = j.pts.length > 5;
   body.innerHTML = `<div class="job-head"><h3>${j.title}</h3><span class="when">${j.when}</span></div>
-    <div class="org">${j.org}${j.note?` <small>· ${j.note}</small>`:''} <small>· ${j.loc}</small></div>
+    <div class="org">${j.org}${j.note?` <small>· ${j.note}</small>`:''} <small>· ${j.loc}</small>${j.employment?`<div style="margin-top:6px"><strong>• ${j.employment}</strong></div>`:''}</div>
     <ul class="${long?'hide':''}">${j.pts.map(p=>`<li>${p}</li>`).join('')}</ul>
     ${long?'<button class="more">Show more</button>':''}
     <div class="chips">${j.tech.map(t=>`<span class="chip">${t}</span>`).join('')}</div>`;
