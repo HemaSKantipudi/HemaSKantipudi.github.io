@@ -573,7 +573,7 @@ function updateCairnsPanel(){
  const localHour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Australia/Brisbane',hour:'2-digit',hourCycle:'h23'}).format(now));
  const onShift=localHour>=8 && localHour<17;
  const shift=document.querySelector('.career-details .status-shift');
- if(shift){shift.textContent=onShift?'ON SHIFT':'OFFLINE';shift.classList.toggle('offline',!onShift);}
+ if(shift){shift.textContent=onShift?'ON SHIFT':'OFF SHIFT';shift.classList.toggle('offline',!onShift);}
  const start=Date.UTC(2026,5,1);
  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Brisbane',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
  const get=k=>Number(today.find(p=>p.type===k).value);
