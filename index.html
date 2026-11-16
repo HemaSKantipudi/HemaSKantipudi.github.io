@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-theme="dark">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -165,6 +165,9 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center}
 .reveal{opacity:0;transform:translateY(14px);transition:opacity .6s ease,transform .6s ease}
 .reveal.in{opacity:1;transform:none}
 @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none}html{scroll-behavior:auto}}
+
+/* Portfolio portrait and dark-first presentation */
+.profile-photo-wrap{display:flex;justify-content:center;margin-bottom:22px}.profile-photo{width:170px;height:170px;object-fit:cover;border-radius:50%;border:5px solid var(--surface);box-shadow:0 0 0 2px var(--accent),0 16px 36px rgba(0,0,0,.25)}.hero-card{text-align:center}.hero-card .stats{text-align:left}.hero-card .mini-logos{justify-content:center}@media(max-width:600px){.profile-photo{width:140px;height:140px}}
 </style>
 </head>
 <body>
@@ -196,7 +199,7 @@ footer{padding:28px 0 40px;color:var(--muted);font-size:13px;text-align:center}
         <a class="btn ghost" href="#experience">View experience</a>
       </div>
     </div>
-    <aside class="card hero-card reveal">
+    <aside class="card hero-card reveal"><div class="profile-photo-wrap"><img class="profile-photo" src="https://avatars.githubusercontent.com/u/238323676?v=4" alt="Hema Sudheer Kantipudi profile photograph" loading="eager"></div>
       <h3>At a glance</h3>
       <div class="stats">
         <div class="stat"><b>4+ yrs</b><span>Enterprise IT support</span></div>
