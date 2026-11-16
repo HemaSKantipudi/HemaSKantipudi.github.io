@@ -191,6 +191,8 @@ body,main{background:#fff}
 .career-details .status-location{font-size:11px;letter-spacing:.08em;color:var(--muted)}
 .career-details .status-shift{font-size:11px;color:#08795f;background:#e0f6ed;border-radius:30px;padding:5px 9px}
 .career-details .status-shift:before{content:"● ";color:#12936d}
+.career-details .status-shift.offline{color:#667085;background:#f0f2f5}
+.career-details .status-shift.offline:before{color:#98a2b3}
 .career-details .status-clock{font-family:"JetBrains Mono",monospace;font-size:28px;font-weight:700;margin:12px 0;color:var(--text);font-variant-numeric:tabular-nums}
 .career-details .status-line{display:flex;justify-content:space-between;gap:12px;border-top:1px solid var(--line);padding:12px 0;font-size:13px}
 .career-details .status-line span{color:var(--muted)}
@@ -568,6 +570,10 @@ document.querySelectorAll('.reveal').forEach(el=> io ? io.observe(el) : el.class
 function updateCairnsPanel(){
  const now=new Date();
  document.getElementById('cairnsClock').textContent=new Intl.DateTimeFormat('en-AU',{timeZone:'Australia/Brisbane',hour:'2-digit',minute:'2-digit',second:'2-digit',hourCycle:'h23'}).format(now);
+ const localHour=Number(new Intl.DateTimeFormat('en-GB',{timeZone:'Australia/Brisbane',hour:'2-digit',hourCycle:'h23'}).format(now));
+ const onShift=localHour>=8 && localHour<17;
+ const shift=document.querySelector('.career-details .status-shift');
+ if(shift){shift.textContent=onShift?'ON SHIFT':'OFFLINE';shift.classList.toggle('offline',!onShift);}
  const start=Date.UTC(2026,5,1);
  const today=new Intl.DateTimeFormat('en-CA',{timeZone:'Australia/Brisbane',year:'numeric',month:'2-digit',day:'2-digit'}).formatToParts(now);
  const get=k=>Number(today.find(p=>p.type===k).value);
